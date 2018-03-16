@@ -26,7 +26,7 @@ try {
 }
 if(auth.bot_token) {
   console.log("logging in with bot token");
-  bot.login(process.env.(auth.bot_token));
+  bot.login(auth.bot_token);
 }
 // Initialize skills cache and set timer to clear cache after X amount of hours
 let skillsCache = {"one":"first"};
